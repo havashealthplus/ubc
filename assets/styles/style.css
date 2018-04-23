@@ -94,28 +94,6 @@ header {
   color: #fff;
 }
 
-.link:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  height: 2px;
-  left: 0;
-  width: 0;
-  bottom: -3px;
-  background: #fff;
-  transition-property: width;
-  transition-duration: 0.35s;
-  transition-timing-function: ease-out;
-}
-
-.link:hover:after,
-.link:focus:after,
-.link:active:after {
-  left: 0;
-  right: 0;
-  width: 100%;
-}
-
 @media screen and (min-width: 768px) {
   .main-menu__item {
     display: inline-block;
@@ -126,7 +104,24 @@ header {
     color: #003352;
   }
   .link:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 2px;
+    left: 0;
+    width: 0;
+    bottom: -3px;
     background: #003352;
+    transition-property: width;
+    transition-duration: 0.35s;
+    transition-timing-function: ease-out;
+  }
+  .link:hover:after,
+  .link:focus:after,
+  .link:active:after {
+    left: 0;
+    right: 0;
+    width: 100%;
   }
 }
 
