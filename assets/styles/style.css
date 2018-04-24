@@ -157,6 +157,7 @@ header {
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: -0.15rem;
+  text-shadow: 0 0 5px rgba(255,255,255,.5);
 }
 
 .content-list-title {
@@ -273,9 +274,14 @@ header {
 }
 
 #program-promo {
-  padding-top: 5rem;
-}
+    padding-top: 5rem;
+  }
 
+@media screen and (min-width: 768px) {
+  #program-promo {
+    padding-top: 0;
+  }
+}
 
 
 /*------------------
