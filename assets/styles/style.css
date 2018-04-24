@@ -56,112 +56,94 @@ section, footer, div {
       header
 ------------------*/
 header {
-  position: absolute;
+  position: fixed;
   z-index: 1;
+  height: 5rem;
   width: 100%;
-  padding: 5rem 0;
-  border-top: 5px solid #cddb00;
+  background: #003352;
 }
 
-.logo {
-  float: left;
-}
-
-.logo a {
-  font-size: 1.8rem;
-  color: #fff;
-  text-decoration: none;
+nav {
+  position: fixed;
+  height: 7rem;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .main-menu {
-  float: right;
+  text-align: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  -webkit-transform: skew(-20deg);
+     -moz-transform: skew(-20deg);
+       -o-transform: skew(-20deg);
+  background: #cddb00;
 }
 
 .main-menu__item {
-  text-align: right;
-  margin-bottom: 1.5rem;
+  display: inline-block;
+  padding: 2.5rem 1.5rem;
+  -webkit-transform: skew(20deg);
+     -moz-transform: skew(20deg);
+       -o-transform: skew(20deg);
 }
 
-.link {
-  display: inline;
-  position: relative;
-  overflow: hidden;
+.main-menu__item .link {
   font-size: 1.8rem;
+  color: #003352;
   text-decoration: none;
-  color: #fff;
 }
 
-.link:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  height: 2px;
-  left: 0;
-  width: 0;
-  bottom: -3px;
-  background: #fff;
-  transition-property: width;
-  transition-duration: 0.35s;
-  transition-timing-function: ease-out;
-}
-
-.link:hover:after,
-.link:focus:after,
-.link:active:after {
-  left: 0;
-  right: 0;
-  width: 100%;
+@media screen and (min-width: 576px) {
+  nav {
+    width: 70%;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  nav {
+    width: 60%;
+  }
   .main-menu__item {
-    display: inline-block;
-    padding-left: 2.5rem;
-    margin-bottom: 0;
+    padding: 2.5rem;
+    font-size: 2.2rem;
   }
-  .link {
-    color: #003352;
-  }
-  .link:after {
-    background: #003352;
-  }
-}
-
-
-/*------------------
-      sections
-------------------*/
-.content {
-  padding: 5rem 2.5rem;
-}
-
-.content-title {
-  padding-top: 12.5rem;
-}
-
-@media screen and (min-width: 768px) {
-  .content-title {
-    padding-top: 0;
-  }
-  #intro .content {
-    padding-top: 10rem;
+  .main-menu__item .link {
+    font-size: 2.2rem;
   }
 }
 
 @media screen and (min-width: 992px) {
-  #intro .content {
-    padding-top: 15rem;
+  nav {
+    width: 50%;
   }
 }
 
-.content-title {
-  font-family: 'Helvetica', sans-serif;
-  font-size: 7rem;
-  font-weight: 700;
-  letter-spacing: -0.35rem;
+.logo img {
+  max-width: 20rem;
+}
+
+@media screen and (min-width: 768px) {
+  .logo img {
+    max-width: 35rem;
+  }
+}
+
+/*------------------
+      sections
+------------------*/
+#intro {
+  padding-top: 15rem;
+}
+
+#intro .content {
+  padding: 0;
+}
+
+.content {
+  padding: 5rem 2.5rem;
 }
 
 .content-subtitle {
@@ -219,124 +201,10 @@ header {
   }
 }
 
-.service-list {
-  width: 100%;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.service-list__item {
-  display: inline;
-  font-size: 2.2rem;
-  line-height: 3.4rem;
-}
-
-.service-list__item:before {
-  content: '/ ';
-}
-
-.benefits-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.benefits-list__item {
-  padding: 1.5rem 0 0 2.5rem;
-  font-size: 2.2rem;
-}
-
-.benefits-list__item:before {
-  position: absolute;
-  content: "✔";
-  margin-left: -2.5rem;
-}
-
-.lime .service-list__item:before, .lime .benefits-list__item:before {
-  color: #ffffff;
-}
-
-.blue .service-list__item:before, .blue .benefits-list__item:before {
-  color: #cddb00;
-}
-
-.modal .modal-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 1rem 0 0;
-  padding-left: 0;
-}
-
-.modal .modal-list .modal-list__item {
-  display: flex;
-  flex-direction: column;
-  float: left;
-  justify-content: center;
-  text-align: center;
-  width: 50%;
-}
-
-.modal .modal-list .modal-list__item {
-  border: 1px solid #003352;
-  list-style-type: none;
-  position: relative;
-  margin: 0 -1px -1px 0;
-  padding: 2.5rem 1.5rem;
-  font-size: 2.2rem;
-}
-
-.modal .modal-list .modal-list__item:nth-of-type(1) {
-  width: 100%;
-  width: calc(100% - 1px);
-  padding: 3rem 0;
-}
-
-#program-promo {
-    padding-top: 5rem;
-  }
-
-@media screen and (min-width: 768px) {
-  #program-promo {
-    padding-top: 0;
-  }
-}
 
 
-/*------------------
-      footer
-------------------*/
-footer {
-  padding: 2rem 0 5rem;
-  border-top: 1px solid rgba(0,0,0,.15);
-}
 
-footer span {
-  display: block;
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-}
 
-footer span:nth-of-type(1) {
-  margin: 4rem 0 3rem;
-  opacity: .5;
-}
 
-.footer-link {
-  text-decoration: none;
-  color: #003352;
-}
-
-#copyright {
-  padding: 2.5rem 0;
-  background: #003352;
-}
-
-.copyright-text {
-  display: block;
-  font-size: 1.3rem;
-  color: #fff;
-  opacity: .6;
-}
 
 
