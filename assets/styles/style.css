@@ -32,7 +32,7 @@ article {
   padding: 0;
 }
 
-section {
+section, footer, div {
   outline: none;
 }
 
@@ -59,7 +59,7 @@ header {
   position: absolute;
   z-index: 1;
   width: 100%;
-  padding: 5rem 0 10rem;
+  padding: 5rem 0;
   border-top: 5px solid #cddb00;
 }
 
@@ -136,6 +136,25 @@ header {
 ------------------*/
 .content {
   padding: 5rem 2.5rem;
+}
+
+.content-title {
+  padding-top: 12.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .content-title {
+    padding-top: 0;
+  }
+  #intro .content {
+    padding-top: 10rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #intro .content {
+    padding-top: 15rem;
+  }
 }
 
 .content-title {
