@@ -152,6 +152,13 @@ header {
   letter-spacing: -0.25rem;
 }
 
+.content-quote {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.15rem;
+}
+
 .content-list-title {
   font-family: 'Helvetica', sans-serif;
   font-size: 2.5rem;
@@ -182,6 +189,10 @@ header {
   }
   .content-title {
     font-size: 9rem;
+  }
+  .content-quote {
+    font-size: 5rem;
+    letter-spacing: -0.25rem;
   }
   .content-text {
     font-size: 2.6rem;
@@ -229,6 +240,43 @@ header {
 .blue .service-list__item:before, .blue .benefits-list__item:before {
   color: #cddb00;
 }
+
+.modal .modal-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0 0;
+  padding-left: 0;
+}
+
+.modal .modal-list .modal-list__item {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+}
+
+.modal .modal-list .modal-list__item {
+  border: 1px solid #003352;
+  list-style-type: none;
+  position: relative;
+  margin: 0 -1px -1px 0;
+  padding: 2.5rem 1.5rem;
+  font-size: 2.2rem;
+}
+
+.modal .modal-list .modal-list__item:nth-of-type(1) {
+  width: 100%;
+  width: calc(100% - 1px);
+  padding: 3rem 0;
+}
+
+#program-promo {
+  padding-top: 5rem;
+}
+
+
 
 /*------------------
       footer
