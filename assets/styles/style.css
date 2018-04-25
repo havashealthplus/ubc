@@ -48,8 +48,12 @@ section, footer, div {
   background-color: #f5f7d3;
 }
 
+.service {
+  padding: 5rem 0;
+}
+
 .quote {
-  padding: 2.5rem 0;
+  padding: 5rem 0;
   background-color: #003352;
   color: #ffffff;
 }
@@ -101,15 +105,16 @@ section, footer, div {
 }
 
 .content-quote {
+  margin-bottom: 0;
   font-family: 'Helvetica', sans-serif;
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: -0.15rem;
-  text-shadow: 0 0 5px rgba(255,255,255,.5);
 }
 
 .content-list-title {
-  margin-top: 0;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
   font-family: 'Helvetica', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
@@ -219,6 +224,59 @@ section, footer, div {
   }
 }
 
+/*------------------
+       team
+------------------*/
+#team {
+  padding: 10rem 0 4.5rem;
+}
+
+.profile {
+  z-index: 0;
+  margin-bottom: 7.5rem;
+  background: #003352;
+}
+
+.profile:after {
+  position: absolute;
+  background: inherit;
+  content: '';
+  display: block;
+  height: 30px;
+  margin-top: -30px;
+  right:16px;
+  left: 15px;
+  -webkit-transform: skewY(-2.5deg);
+     -moz-transform: skewY(-2.5deg);
+          transform: skewY(-2.5deg);
+  transform-origin: 100%; 
+}
+
+.bio {
+  z-index: 1;
+  margin-top: -1rem;
+  padding: 3.5rem 1.5rem;
+  font-size: 2rem;
+  background: #003352;
+  color: #ffffff;
+}
+
+.name {
+  display: block;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 700;
+  color: #cddb00;
+}
+
+.phone, .email {
+  display: block;
+  padding-top: 1rem;
+}
+
+.bio a {
+  text-decoration: none;
+  color: inherit;
+}
 
 
 /*------------------
