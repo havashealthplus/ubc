@@ -174,16 +174,16 @@ nav {
 
 @media screen and (min-width: 768px) {
   #connected-health, #outcomes, #care {
-    background: url(../images/slanted-bg-lte.png) no-repeat;
+    background: url('../images/slanted-bg-lte.png') no-repeat;
     background-position: left bottom;
     background-size: 30%;
-    background: #f5f7d3;
+    background-color: #f5f7d3;
   }
   #access-savings, #education {
-    background: url(../images/slanted-bg-drk.png) no-repeat;
+    background: url('../images/slanted-bg-drk.png') no-repeat;
     background-position: right bottom;
     background-size: 30%;
-    background: #ffffff;
+    background-color: #ffffff;
   }
   .service, .quote {
     padding: 5rem 0;
