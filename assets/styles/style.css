@@ -99,6 +99,14 @@ nav {
   font-size: 1.8rem;
   color: #003352;
   text-decoration: none;
+  -webkit-transition: color .25s ease-in-out;
+     -moz-transition: color .25s ease-in-out;
+       -o-transition: color .25s ease-in-out;
+          transition: color .25s ease-in-out;
+}
+
+.main-menu__item .link:hover, .main-menu__item .link:focus {
+  color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
@@ -138,6 +146,10 @@ nav {
 /*------------------
       sections
 ------------------*/
+#intro {
+  padding: 12.5rem 0 5rem;
+}
+
 .service {
   padding: 2.5rem 0;
 }
