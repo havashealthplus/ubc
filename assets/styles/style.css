@@ -34,6 +34,84 @@ article {
 
 section, footer, div {
   outline: none;
+  clear: both;
+}
+
+
+/*------------------
+      header
+------------------*/
+header {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 5rem 0 15rem;
+  border-top: 5px solid #cddb00;
+}
+
+.logo {
+  float: left;
+}
+
+.logo a {
+  font-size: 1.8rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-menu {
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.main-menu__item {
+  text-align: right;
+  margin-bottom: 1.5rem;
+}
+
+.link {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+  font-size: 2.2rem;
+  text-decoration: none;
+  color: #003352;
+}
+
+.link:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 2px;
+  left: 0;
+  width: 0;
+  bottom: -3px;
+  background: #003352;
+  transition-property: width;
+  transition-duration: 0.35s;
+  transition-timing-function: ease-out;
+}
+
+.link:hover:after,
+.link:focus:after,
+.link:active:after {
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding: 5rem 0;
+  }
+  .main-menu__item {
+    display: inline-block;
+    padding-left: 2.5rem;
+    margin-bottom: 0;
+  }
 }
 
 
@@ -45,7 +123,7 @@ section, footer, div {
 }
 
 #connected-health, #care {
-  background-color: #f5f7d3;
+  background: #f5f7d3;
 }
 
 .service {
@@ -54,7 +132,7 @@ section, footer, div {
 
 .quote {
   padding: 5rem 0;
-  background-color: #003352;
+  background: #003352;
   color: #ffffff;
 }
 
@@ -67,13 +145,13 @@ section, footer, div {
     background: url(../images/slanted-bg-lte.png) no-repeat;
     background-position: left bottom;
     background-size: 30%;
-    background-color: #f5f7d3;
+    background: #f5f7d3;
   }
   #access-savings, #education {
     background: url(../images/slanted-bg-drk.png) no-repeat;
     background-position: right bottom;
     background-size: 30%;
-    background-color: #ffffff;
+    background: #ffffff;
   }
   .service, .quote {
     padding: 5rem 0;
