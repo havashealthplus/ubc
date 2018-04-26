@@ -148,10 +148,12 @@ nav {
 .parallax {
   position: absolute;
   display: none;
+  transform: rotate(45deg);
 }
 
 #parallax-one {
   margin-left: 45%;
+  margin-top: -5%;
   width: 3rem;
 }
 
@@ -162,11 +164,18 @@ nav {
 }
 
 #parallax-three {
+  width: 4rem;
   margin-left: 25%;
-  margin-top: 15%;
+  margin-top: 35%;
 }
 
 #parallax-four {
+  width: 1rem;
+  margin-left: 0%;
+  margin-top: 5%;
+}
+
+#parallax-five {
   width: 2.5rem;
   margin-left: 65%;
   margin-top: 35%;
