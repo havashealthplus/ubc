@@ -11,6 +11,7 @@ body {
   font-size: 62.5%; 
   font-weight: normal;
   font-style: normal;
+  color: #000000;
 }
 
 h1, h2, h3,
@@ -29,6 +30,7 @@ article {
 	width: 100%;
 	margin: 0;
   padding: 0;
+  outline: none;
 }
 
 .wrapper {
@@ -117,7 +119,7 @@ article {
   margin-bottom: 2rem;
   padding: 1.5rem 2.5rem;
   font-size: 1.8rem;
-  background: #003352;
+  background: #000000;
   color: #ffffff;
 }
 
@@ -148,6 +150,7 @@ article {
   top: -5px;
   font-size: 5rem;
   font-weight: 700;
+  color: #f00;
 }
 
 .service-list__item:nth-of-type(1)::before {
