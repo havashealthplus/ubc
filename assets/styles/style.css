@@ -1,6 +1,10 @@
 /*------------------
      general
 ------------------*/
+html {
+  overflow-x: hidden !important;
+}
+
 html,
 body {
 	height: 100%;
@@ -81,18 +85,18 @@ nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  -webkit-transform: skew(-20deg);
-     -moz-transform: skew(-20deg);
-       -o-transform: skew(-20deg);
+  -webkit-transform: skew(-35deg);
+     -moz-transform: skew(-35deg);
+       -o-transform: skew(-35deg);
   background: #cddb00;
 }
 
 .main-menu__item {
   display: inline-block;
   padding: 2.5rem 1.5rem;
-  -webkit-transform: skew(20deg);
-     -moz-transform: skew(20deg);
-       -o-transform: skew(20deg);
+  -webkit-transform: skew(35deg);
+     -moz-transform: skew(35deg);
+       -o-transform: skew(35deg);
 }
 
 .main-menu__item .link {
@@ -148,42 +152,54 @@ nav {
 .parallax {
   position: absolute;
   display: none;
-  transform: rotate(45deg);
 }
 
 #parallax-one {
-  margin-left: 45%;
-  margin-top: -5%;
-  width: 3rem;
+  margin-left: 25%;
+  margin-top: 5%;
+  width: 20rem;
 }
 
 #parallax-two {
-  width: 1rem;
-  margin-left: 75%;
-  margin-top: 15%;
+  margin-left: 15%;
+  margin-top: 35%;
+  width: 20rem;
 }
 
 #parallax-three {
-  width: 4rem;
-  margin-left: 25%;
-  margin-top: 35%;
-}
-
-#parallax-four {
-  width: 1rem;
   margin-left: 0%;
-  margin-top: 5%;
-}
-
-#parallax-five {
-  width: 2.5rem;
-  margin-left: 65%;
-  margin-top: 35%;
+  margin-top: -5%;
+  width: 20rem;
 }
 
 @media screen and (min-width: 768px) {
   .parallax {
     display: block;
+  }
+}
+
+
+/*------------------
+   service anchors
+------------------*/
+.service-anchor {
+  display: block;
+  margin-bottom: 2rem;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+}
+
+.service-anchor img {
+  margin-bottom: 1rem;
+  padding: 2rem;
+  background: #cddb00;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .service-anchor {
+    margin-bottom: 0;
   }
 }
 
@@ -229,7 +245,7 @@ nav {
     background-size: 30%;
     background-color: #f5f7d3;
   }
-  #access-savings, #education {
+  #access-services, #education {
     background: url('../images/slanted-bg-drk.png') no-repeat;
     background-position: right bottom;
     background-size: 30%;
