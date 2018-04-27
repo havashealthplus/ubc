@@ -11,7 +11,6 @@ body {
   font-size: 62.5%; 
   font-weight: normal;
   font-style: normal;
-  /*color: #003352;*/
 }
 
 h1, h2, h3,
@@ -45,6 +44,10 @@ article {
 /*------------------
        intro
 ------------------*/
+.intro {
+  padding: 5rem 0;
+}
+
 .intro-title {
   display: block;
   margin-top: 0;
@@ -62,6 +65,14 @@ article {
   text-align: center;
 }
 
+.intro a {
+  display: block;
+  font-size: 1.6rem;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   .intro-title {
     font-size: 5rem;
@@ -75,7 +86,7 @@ article {
 
 .intro img {
   display: block;
-  margin: 2.5rem auto;
+  margin: 0 auto 1.5rem;
 }
 
 .intro img:hover {
@@ -99,6 +110,15 @@ article {
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
+}
+
+.download {
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding: 1.5rem 2.5rem;
+  font-size: 1.8rem;
+  background: #003352;
+  color: #ffffff;
 }
 
 
@@ -191,7 +211,7 @@ article {
 
 .sign-off {
   display: block;
-  margin-bottom: 2.5rem;
+  padding: 10rem 0 2.5rem;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: -0.05rem;
@@ -208,7 +228,21 @@ article {
 
 
 
+.roo {
+  display: block;
+  margin: 5rem auto;
+  animation: bounce .5s infinite;
+}
 
+@keyframes bounce {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  50% {
+    transform: translate3d(0, 10px, 0);
+  }
+}
 
 
 
