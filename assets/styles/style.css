@@ -191,7 +191,9 @@ nav {
 }
 
 .service-anchor img {
-  margin-bottom: 1rem;
+  display: block;
+  max-width: 135px;
+  margin: 0 auto 1rem;
   padding: 2rem;
   background: #cddb00;
   border-radius: 50%;
