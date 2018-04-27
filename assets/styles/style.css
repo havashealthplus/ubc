@@ -275,7 +275,7 @@ nav {
 .content-subtitle {
   margin: 0;
   font-family: 'Helvetica', sans-serif;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
   letter-spacing: -0.25rem;
 }
@@ -387,6 +387,12 @@ nav {
   width: 100%;
   width: calc(100% - 1px);
   padding: 3rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .content-subtitle {
+    font-size: 5rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
